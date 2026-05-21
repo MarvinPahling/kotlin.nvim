@@ -225,7 +225,7 @@ function M.setup_kotlin_lsp(opts)
     if not java_bin then
       return
     end
-    local jvm_args = M.parse_launcher_jvm_args(legacy_launcher_path, is_windows)
+    local jvm_args = M.parse_launcher_jvm_args(legacy_launcher_path)
 
     cmd = { java_bin }
     vim.list_extend(cmd, jvm_args)
@@ -430,7 +430,7 @@ end
 
 -- Parse JVM arguments from the bundled launcher script.
 -- Extracts --add-opens, --enable-native-access, -D, and -X flags.
-function M.parse_launcher_jvm_args(launcher_path, is_windows)
+function M.parse_launcher_jvm_args(launcher_path)
   local args = {}
   local content = vim.fn.readfile(launcher_path)
 
