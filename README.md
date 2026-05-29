@@ -1,37 +1,41 @@
 <!-- markdownlint-disable -->
-
-> [!warning]
-> DAP support is not yet finalized in the plugin. There is a known issue with the kotlin-lsp debug adapter. See [Kotlin/kotlin-lsp#198](https://github.com/Kotlin/kotlin-lsp/issues/198) for details.
-
-<br />
 <div align="center">
   <a href="https://github.com/AlexandrosAlexiou/kotlin.nvim">
-    <img src="./.github/kodee.svg" alt="kotlin.nvim" width="400">
+    <img src="./.github/kodee.png" alt="kotlin.nvim" width="150">
   </a>
-  <p align="center">
+  <h1 align="center">
+    kotlin.nvim
+  </h1>
+  <p>
     <br />
+    <strong>
+      Extensions for JetBrains'
+      <a href="https://github.com/Kotlin/kotlin-lsp/">Kotlin Language Server (kotlin-lsp)</a>
+      support in <a href="https://neovim.io/">Neovim</a><br />
+      (>=0.11.0)
+    </strong>
+  </p>
+
+  <p>
     <a href="./doc/kotlin.nvim.txt"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
+    <br /><br />
     <a href="https://github.com/AlexandrosAlexiou/kotlin.nvim/issues/new?assignees=&labels=bug&projects=&template=bug_report.yml">Report Bug</a>
     ·
     <a href="https://github.com/AlexandrosAlexiou/kotlin.nvim/discussions/new?category=ideas">Request Feature</a>
     ·
     <a href="https://github.com/AlexandrosAlexiou/kotlin.nvim/discussions/new?category=q-a">Ask Question</a>
   </p>
-  <p>
-<strong>
-Extensions for JetBrains' <a href="https://github.com/Kotlin/kotlin-lsp/">Kotlin Language Server (kotlin-lsp)</a> support in <a href="https://neovim.io/">Neovim</a><br /> (>=0.11.0).
-</strong>
-  </p>
 
-[![Neovim][neovim-shield]][neovim-url]
-[![Lua][lua-shield]][lua-url]
-[![Kotlin][kotlin-shield]][kotlin-url]
+  <br />
 
-[![GPL3 License][license-shield]][license-url]
-[![Issues][issues-shield]][issues-url]
+  [![Neovim][neovim-shield]][neovim-url]
+  [![Lua][lua-shield]][lua-url]
+  [![Kotlin][kotlin-shield]][kotlin-url]
+
+  [![GPL3 License][license-shield]][license-url]
+  [![Issues][issues-shield]][issues-url]
 </div>
+
 
 ## 🧩 Extensions
 
@@ -57,6 +61,9 @@ Extensions for JetBrains' <a href="https://github.com/Kotlin/kotlin-lsp/">Kotlin
 - [x] Per-project LSP disabling via marker file
   - Create a `.disable-kotlin-lsp` file in the project root to prevent the Kotlin LSP from starting (detected automatically by searching upward from the opened file)
 - [x] DAP debugging support via nvim-dap (uses kotlin-lsp's built-in debug adapter)
+
+> [!warning]
+> DAP support is not yet finalized in the plugin. There is a known issue with the kotlin-lsp debug adapter. See [Kotlin/kotlin-lsp#198](https://github.com/Kotlin/kotlin-lsp/issues/198) for details.
 
 > [!note]
 > **Version Requirements:**

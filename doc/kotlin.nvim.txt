@@ -19,7 +19,7 @@ Debugging ···································
 Introduction                                                       kotlin.nvim.intro*
 
 This plugin provides advanced Kotlin support for Neovim, integrating with
-`kotlin-ls`, JetBrains' Kotlin Language Server. It offers essential features
+`kotlin-lsp`, JetBrains' Kotlin Language Server. It offers essential features
 such as class file decompilation, workspace export, diagnostic hint toggling,
 inlay hints configuration, and per-project workspace isolation.
 
@@ -199,33 +199,33 @@ Key Mapping Example: ~
         { desc = 'Kotlin code actions' })
     vim.keymap.set('n', '<leader>kq', ':KotlinQuickFix<CR>',
         { desc = 'Kotlin quick fix' })
-    
+
     -- Go to type definition
     vim.keymap.set('n', '<leader>kt', ':KotlinTypeDefinition<CR>',
         { desc = 'Go to type definition' })
     vim.keymap.set('n', '<leader>ki', ':KotlinImplementation<CR>',
         { desc = 'Go to implementation' })
-    
+
     -- Organize imports
-    vim.keymap.set('n', '<leader>ko', ':KotlinOrganizeImports<CR>', 
+    vim.keymap.set('n', '<leader>ko', ':KotlinOrganizeImports<CR>',
         { desc = 'Organize Kotlin imports' })
-    
+
     -- Format buffer
-    vim.keymap.set('n', '<leader>kf', ':KotlinFormat<CR>', 
+    vim.keymap.set('n', '<leader>kf', ':KotlinFormat<CR>',
         { desc = 'Format Kotlin buffer' })
-    
+
     -- Show symbols outline
     vim.keymap.set('n', '<leader>ks', ':KotlinSymbols<CR>',
         { desc = 'Show document symbols' })
-    
+
     -- Find references
     vim.keymap.set('n', '<leader>kr', ':KotlinReferences<CR>',
         { desc = 'Find references' })
-    
+
     -- Rename symbol
     vim.keymap.set('n', '<leader>kn', ':KotlinRename<CR>',
         { desc = 'Rename symbol' })
-    
+
     -- Toggle inlay hints
     vim.keymap.set('n', '<leader>ih', function()
         vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
