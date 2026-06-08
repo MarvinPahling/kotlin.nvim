@@ -218,6 +218,7 @@ function M.setup_kotlin_lsp(opts)
         vim.log.levels.WARN
       )
     end
+    vim.notify("command: " .. cmd)
     cmd = {
       "faketime",
       "2026-06-04",
